@@ -1,0 +1,534 @@
+/*
+Theme Name : Compu A Vision
+Theme Coder : Seif Nageh
+PSD Designer : Salsabil Hsamed
+Started At : 2/12/2021
+Ended At :
+Monitored by : Hessien Attia
+Supported By : Islam Nabil
+First Color : #BA6DD7
+Second Color : #334543
+Third Color : #E8F6EF
+*/
+
+:root {
+    --main-color: #334543;
+    --second-color: #e8f3ee;
+    --third-color: #84aa96;
+    --txt-family-head: marcellus;
+    --txt-family-text: poppins;
+    --transition-easing: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@font-face {
+    font-family: marcellus;
+    src: url(../webfonts/MarcellusSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../webfonts/Poppins-ExtraLight.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--txt-family-text);
+    overflow-x: hidden;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    scroll-behavior: smooth;
+}
+
+.txt-family-head {
+    font-family: Var(--txt-family-head) !important;
+}
+
+.txt-family-text {
+    font-family: Var(--txt-family-text) !important;
+}
+
+.txt-color-1 {
+    color: var(--main-color) !important;
+}
+
+.txt-color-2 {
+    color: var(--second-color) !important;
+}
+
+.txt-color-3 {
+    color: var(--third-color) !important;
+}
+
+.txt-color-transparent {
+    color: transparent;
+}
+
+.txt-font-lg {
+    font-size: 52px;
+    line-height: 1.3;
+}
+
+.pri-btn {
+    color: var(--second-color);
+    background-color: var(--third-color);
+    border-radius: 9px;
+    border-color: var(--third-color);
+}
+
+.spic-btn {
+    top: 107%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bg-main {
+    background-color: var(--main-color) !important;
+}
+
+.bg-grad {
+    background: linear-gradient(to top left, var(--main-color) 0%, var(--third-color) 66%) !important;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.overlay-white {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.font-size-18 {
+    font-size: 18px !important;
+}
+
+.font-size-20 {
+    font-size: 20px !important;
+}
+
+.font-size-30 {
+    font-size: 30px !important;
+}
+
+.font-size-38 {
+    font-size: 38px !important;
+}
+
+@media (max-width: 765px) {
+    .txt-center {
+        text-align: center;
+    }
+    .font-size-38 {
+        font-size: 28px !important;
+    }
+}
+
+.w-45 {
+    width: 45% !important;
+}
+
+.more-rounded {
+    border-radius: 10px;
+}
+
+
+/****************************************************************    Start index   *****************************************************/
+
+
+/*     Start Nav Bar   */
+
+.main-header .navbar .navbar-toggler {
+    background-color: var(--second-color);
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.main-header .navbar .collapse .navbar-nav .nav-link {
+    color: var(--second-color);
+}
+
+.main-header .navbar .collapse .navbar-nav .nav-link:hover,
+.main-header .navbar .collapse .navbar-nav .nav-link a.active,
+.main-header .navbar .collapse .navbar-nav .icon:hover {
+    color: var(--third-color);
+}
+
+
+/*     End Nav Bar   */
+
+
+/*     Start Main   */
+
+.main {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.img-par {
+    margin-left: -50px;
+}
+
+@media (max-width: 993px) {
+    .img-par {
+        margin-left: 15px;
+        text-align: center;
+    }
+}
+
+
+/*     End Main   */
+
+
+/*     Start Vision   */
+
+.vision {
+    background-color: var(--main-color);
+    font-size: 2rem;
+    padding: 5rem 0;
+}
+
+
+/*     End Vision   */
+
+
+/*     Start category   */
+
+.category {
+    color: var(--main-color) !important;
+}
+
+.category a:hover {
+    font-weight: bold;
+}
+
+.category h2 {
+    text-transform: capitalize;
+}
+
+.cat-par {
+    margin: 70px 0;
+}
+
+
+/*     End category   */
+
+
+/*     Start Product Section   */
+
+.card-shadow .card-body {
+    box-shadow: rgba(0 0 0 / 10%) 0px 0px 7px 0px;
+}
+
+.card-shadow button {
+    box-shadow: rgba(0 0 0 / 20%) 0px 0px 10px 1px;
+    background-color: var(--main-color);
+}
+
+.float-img {
+    top: -70px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 175px;
+    height: 175px;
+}
+
+@media (min-width: 1200px) {
+    .float-img {
+        font-size: 20px;
+    }
+}
+
+.prod-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--main-color);
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+
+/*     End Product Section   */
+
+
+/*     Start idea Section   */
+
+.idea input {
+    background-color: transparent;
+}
+
+
+/*     End idea Section   */
+
+
+/*     Start Footer   */
+
+footer {
+    color: #E8F6EF;
+    background-color: var(--main-color);
+    line-height: 30px;
+}
+
+footer .row i {
+    font-size: 25px;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+
+/****************************************************************    End index   *****************************************************/
+
+
+/***********************************************************      Start Category page  **********************************************/
+
+
+/*     Start Main */
+
+.main-cat .container .uk-subnav li .uk-active a,
+.uk-subnav>.uk-active>a,
+.main-cat .container .uk-subnav li a:hover {
+    color: var(--main-color);
+}
+
+
+/*     End Main */
+
+
+/***********************************************************      End Category page  **********************************************/
+
+
+/***********************************************************      Start Package page  **********************************************/
+
+
+/*  Start Main Package*/
+
+.card-round {
+    /* border: 2px solid var(--third-color); */
+    border-radius: 35px;
+    /* background-color: var(--second-color); */
+    margin-bottom: 50px;
+}
+
+.parent-card .uk-card-default {
+    box-shadow: 0px 8px 15px 5px rgba(33, 44, 43, 0.2);
+}
+
+.card-round h6 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card-round i {
+    font-size: 28px;
+}
+
+
+/*  End Main Package*/
+
+
+/*  Start Model */
+
+.can-btn {
+    border: 2px solid var(--third-color);
+    color: var(--main-color);
+    border-radius: 9px;
+}
+
+
+/*  End Model */
+
+
+/***********************************************************      End Package page  **********************************************/
+
+
+/***********************************************************      Start Sign Up page  **********************************************/
+
+
+/*  Start main */
+
+.sign-up-main .icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+    border: 1px solid var(--second-color);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.sign-up-main input::placeholder {
+    color: var(--second-color) !important;
+}
+
+.sign-up-main input::-moz-placeholder {
+    color: var(--second-color) !important;
+}
+
+.sign-up-main input:-moz-placeholder {
+    color: var(--second-color) !important;
+}
+
+.sign-up-main .uk-input {
+    border: 0;
+}
+
+.sign-up-main label {
+    color: var(--second-color);
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.sign-up-main .border-bottom {
+    border-bottom: 1px solid #dee2e652 !important;
+}
+
+.sign-up-main .uk-subnav>*>a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sign-up-main .uk-subnav>.uk-active>a {
+    color: var(--second-color);
+    font-family: var(--txt-family-head);
+}
+
+.sign-up-main .uk-subnav>*>a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.sign-up-main .profile-pic {
+    width: 111px;
+    height: 111px;
+    border: 2px solid var(--second-color);
+}
+
+.a-border a {
+    text-decoration: none;
+    color: var(--second-color);
+    border-bottom: 1px solid var(--second-color);
+}
+
+.a-border a:hover {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+
+/*  End Main */
+
+
+/***********************************************************      End Sign Up page  **********************************************/
+
+
+/***********************************************************      Start Profile page  **********************************************/
+
+
+/*  Start pro-main */
+
+.main-pro-txt {
+    color: rgb(194, 194, 194);
+}
+
+.main-pro-txt div {
+    cursor: pointer;
+}
+
+.main-pro-txt div.active,
+.main-pro-txt p:hover {
+    color: var(--third-color);
+}
+
+
+/*  End pro-main */
+
+
+/*  Start profile form */
+
+.img-profile {
+    border: 2px solid black;
+    padding: 1px;
+}
+
+.uk-grid-medium-cust>* {
+    padding: 1px !important;
+}
+
+.form-group-cust {
+    border: 2px solid var(--third-color);
+    border-radius: 9px;
+    position: relative;
+}
+
+.form-control-cust {
+    height: 3rem;
+    padding: 0.9rem;
+    width: 100%;
+}
+
+.form-group-cust .label {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background-color: var(--second-color);
+    color: var(--third-color);
+    text-align: center;
+    font-weight: bold;
+    display: none;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.form-group-cust input {
+    border: none;
+}
+
+
+/*  End profile form */
+
+
+/***********************************************************      End Profile page  **********************************************/
